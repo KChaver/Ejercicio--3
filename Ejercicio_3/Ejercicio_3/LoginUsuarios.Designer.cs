@@ -43,14 +43,17 @@
             this.UserTextBox.Name = "UserTextBox";
             this.UserTextBox.Size = new System.Drawing.Size(100, 22);
             this.UserTextBox.TabIndex = 0;
+            this.UserTextBox.Text = "KCHAVER";
             // 
             // PaswordTextBox
             // 
             this.PaswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PaswordTextBox.Location = new System.Drawing.Point(199, 88);
             this.PaswordTextBox.Name = "PaswordTextBox";
+            this.PaswordTextBox.PasswordChar = '*';
             this.PaswordTextBox.Size = new System.Drawing.Size(100, 22);
             this.PaswordTextBox.TabIndex = 1;
+            this.PaswordTextBox.Text = "chidori1";
             // 
             // label1
             // 
@@ -94,12 +97,15 @@
             this.CancelarButton.TabIndex = 5;
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
             // 
             // LoginUsuarios
             // 
+            this.AcceptButton = this.AceptarButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CancelButton = this.CancelarButton;
             this.ClientSize = new System.Drawing.Size(477, 247);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.AceptarButton);

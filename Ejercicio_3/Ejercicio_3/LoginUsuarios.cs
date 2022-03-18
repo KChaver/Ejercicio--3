@@ -37,5 +37,10 @@ namespace Ejercicio_3
             frmListaUsers.Show();
 
         }
+
+        private void CancelarButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
